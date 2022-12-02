@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listem um site para ouvir, baixar e armazenar musicas">
+    <meta name="keywords" content="site, musica, armazenamento, download, ouvir, baixar, ListeM">
+    <meta name="autores" content="Gabriel Cavalcante e Rafaeli Turci">
+    <title>ListeM - Jorja Smith</title>
+    <link rel="stylesheet" href="css/jorja.css">
+    <script src="https://kit.fontawesome.com/ffe6e85588.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logotipo/logo.listen.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="menu-principal">
+        <div class="logo">
+            <P class="nome">Listen Music</P>
+        </div>
+    </header>
+
+    <nav class="nave">
+        <div class="container">
+            <input id="responsive-menu" type="checkbox">
+            <label for="responsive-menu"><b>Menu</b><span id="menu-icon"></span></label>
+            <div id="overlay"></div>
+            <ul>
+                <li> <a class="menu" href="Inicio.html">INICIO</a></li>
+                <li> <a class="menu" href="#ARTISTAS">ARTISTAS</a></li>
+                <li> <a class="menu" href="#ALBUNS">ÁLBUNS</a></li>
+                <li> <a class="menu" href="#">LANÇAMENTOS</a></li>
+                <li> <a class="menu" href="sobre.html">SOBRE</a></li>
+                <button id="myBtncad" onclick="onclicklogin('myBtncad','myModal2')"><i class="ri-user-add-fill"></i>
+                    CADASTRO</button>
+                <button id="myBtn" onclick="onclicklogin('myBtn','myModal')"><i
+                        class="ri-user-add-fill"></i>LOGIN</button>
+            </ul>
+
+            <!-- MODAL LOGIN -->
+
+            <div id="myModal" class="modal">
+
+                <main class="containerb">
+                    <div class="modal-content">
+
+                    </div>
+                    <div>
+
+                        <h2>Entre</h2>
+                        <form action="">
+                            <!-- 
+                            <div>
+                                <li> <a class="fechar" href="./Inicio.html">&times;</a></li>
+                            </div> -->
+
+
+                            <div class="input-field">
+                                E-mail
+                                <input type="text" name="Nome de Usuário" id="NomedeUsuário"
+                                    placeholder=" Exemplo@gmail.com">
+                                <div class="underline1"></div>
+                            </div>
+                            <div class="input-field">
+                                Senha
+                                <input type="password" name="Senha" id="password" placeholder="SEnha./#001">
+                                <div class="underline1"></div>
+                            </div>
+                            <br>
+                            <input type="submit" value="Entrar" src="#   ">
+                        </form>
+                        <div class="footerA">
+                            <span>
+                                <H1>OU</H1>
+                            </span>
+                            <div class="social-fields">
+                                <div class="social-field twitter">
+                                    <a href="https://twitter.com/i/flow/login">
+                                        <i class="fab fa-twitter"></i>
+                                        Entre com Twitter
+
+                                    </a>
+                                </div>
+
+
+                                <div class="social-fields">
+                                    <div class="social-field facebook">
+                                        <a href="https://pt-br.facebook.com/">
+                                            <i class="fab fa-facebook"></i>
+                                            Entre com Facebook
+
+                                        </a>
+                                    </div>
+
+                                    <div class="social-fields">
+                                        <div class="social-field google">
+                                            <a
+                                                href="https://accounts.google.com/signin/v2/identifier?faa=1&rip=1&as=UJiuyGvoGW4gXc7jQ8%2FDrg&continue=https%3A%2F%2Faccounts.google.com%2Fgsi%2Fselect%3Fclient_id%3D49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com%26ux_mode%3Dpopup%26ui_mode%3Dcard%26channel_id%3D72c0cbb1dd492507d90d276d36dae3386a05c22fd4c24ab0804ad8ccc3346d1d%26origin%3Dhttps%253A%252F%252Ftwitter.com%26as%3DUJiuyGvoGW4gXc7jQ8%252FDrg&hl=pt&flowName=GlifWebSignIn&flowEntry=AddSession">
+                                                <i class="fab fa-google"></i>
+                                                Entre com Google
+
+                                            </a>
+
+
+
+                                        </div>
+                                    </div>
+                </main>
+
+            </div>
+
+
+            <!-- MODAL CADASTRO -->
+
+            <div id="myModal2" class="modal">
+
+                <div class="modal-content">
+                    <!-- 
+                    <div>
+                        <li> <a class="fechar" href="./Inicio.html">&times;</a></li>
+                    </div> -->
+
+                    <div class="containerC">
+
+
+                        <div class="esquerdo">
+
+
+
+
+                            <form action="" class="form-item">
+                                <div class="input-field">
+                                    Nome Completo
+                                    <input type="text" name="Nome de Usuário" id="NomedeUsuário"
+                                        placeholder="Gabriel Cavalcante" required>
+                                    <div class="underline1"></div>
+                                </div>
+                                <div class="input-field">
+
+                                    Email
+                                    <input type="email" name="email" id="email" placeholder="exemplo@nome.com">
+                                    <div class="underline1"></div>
+                                </div>
+                                <div class="input-field">
+                                    <br>
+                                    Confirme seu Email
+                                    <input type="email" value="" id="email" placeholder="exemplo@nome.com">
+                                    <div class="underline1"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="direito">
+                            <form action="" class="form-content">
+                                <div class="input-field">
+                                    <br>
+                                    Senha
+                                    <input type="password" name="Senha" id="login" placeholder="SEnha./#001" required>
+                                    <div class="underline1"></div>
+                                </div>
+                                <div class="input-field">
+
+                                    Confirme sua Senha
+                                    <input type="password" name="Senha" id="password" placeholder="SEnha./#001"
+                                        required>
+                                    <div class="underline1"></div>
+                                </div>
+
+                                <input type="submit" value="Cadastre-se" src="#">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- conteudo visivel na pagina -->
+
+    <main>
+        <section class="banner">
+            <h1 class="bordao">JORJA SMITH</h1><br>
+            <h2 class="bordaoMedio">DOS COVERS AOS PALCOS.</h2>
+            <p class="bordaoPequeno">CONHEÇA JORJA SMITH, JOVEM ARTISTA QUE VEM IMPRESSIONANDO COM SUA AUTENTICIDADE.
+            </p>
+        </section>
+
+        <section class="bannerConteudo">
+            <h1 class="bordaoRight">JORJA ALICE SMITH</h1><br>
+            <P class="bordaopequenoRight"> Nascida em 11 julho de 1997 em washall, Jorja começou cedo,
+                com seu pai musico, facilitou o aprendizado com alguns instrumentos. </P>
+            <P class="bordaopequenoRight">Fez algum sucesso na internet postando seus covers no YouTube.
+                Com "Too Close Alex Clare" como um dos maiores covers e gerando um grande reconhecimento.</P>
+            <P class="bordaopequenoRight"> Resolveu se mudar para capital do Reino Unido com o intuito de conseguir mais
+                reconhecimento,
+                então durante o dia trabalhava no "starbucks"
+                para fazer algum dinheiro e conseguir pagar o aluguel, e durante a noite escrevia e compunha algumas
+                musicas. </P>
+            <P class="bordaopequenoRight">Enfim o sucesso veio com "Blue Lights",
+                que desde então abriu portas para algumas participações em albuns de grandes artistas como "Drake" e
+                "Kendrick Lamar"</P>
+        </section>
+
+        <section class="gridPrincipal">
+            <div>
+                <h1 class="titulo">Discografia</h1>
+                <img href="Inicio.html" id="Albuns" src="img/foto/project-11.jpg " alt="">
+                <img src="img/foto/lostJorja.jpg" alt="">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--  -->
+    <footer>
+        <section class="footer">
+            <div class="social">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/login?lang=pt"><i class="fab fa-twitter"></i></a>
+                <a
+                    href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjYzODUzNjg1LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/login/pt"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <ul class="list">
+                <li href="Inicio.html"><a href="Inicio.html">Inicio</a></li>
+                <li href="#"><a href="">Contato</a></li>
+            </ul>
+            <p class="copyright"> LISTEM 2022&copy; </p>
+
+        </section>
+    </footer>
+
+    <!-- Libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="./js/navbar.js"></script>
+
+</body>
+
+</html>
